@@ -53,4 +53,57 @@ sudo apt install git
 └── README.md
 ```
 
+## Input Format
+
+Phenotype
+- Tab-delimited .txt file
+- First column: Taxa (sample names)
+- Next columns: traits to analyze
+```txt
+Taxa	TestPheno
+IRIS_313-8285	2.3
+IRIS_313-8349	3.1
+...
+```
+Genotype
+- A compressed or plain VCF file
+- Must contain genotype fields in GT format (e.g., 0/0, 0/1)
+- Chromosome values must be numeric
+
+## How to Use
+
+### 1. Clone this repository
+```bash
+git clone https://github.com/bdramirez26/BLINK-Wrapper
+cd BLINK-Wrapper
+```
+### 2. Build the Docker image
+
+On Apple Silicon (M1/M2/M3/M4):
+```bash
+docker build --platform linux/amd64 -t blink-wrapper .
+```
+On Intel/AMD systems:
+```bash
+docker build -t blink-wrapper .
+```
+### 3. Run the wrapper
+This command runs the analysis using the test data in /data:
+```bash
+docker run --rm \
+  --platform linux/amd64 \
+  -v "$(pwd)":/app \
+  blink-wrapper \
+  data/test-pheno.txt \
+  data/test-150.vcf.gz \
+  blink_results
+```
+This will create a folder blink_results/ containing results and plots.
+
+## Output
+
+
+
+
+
 
