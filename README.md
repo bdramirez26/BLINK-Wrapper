@@ -40,3 +40,17 @@ brew install git
 sudo apt install git
 ```
 
+## Folder Structure
+```pgsql
+.
+├── data/                # Input files (phenotype and VCF)
+│   ├── test-pheno.txt
+│   └── test-150.vcf.gz
+├── blink_results/       # Output directory (auto-created)
+├── BLINKscript.R        # R script that runs the BLINK analysis
+├── run_blink.sh         # Bash wrapper for convenience
+├── Dockerfile           # Container setup
+└── README.md
+```
+
+
