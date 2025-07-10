@@ -45,3 +45,12 @@ A tab-delimited file with:
 
 - First column as Taxa (individual IDs)
 -  One or more trait columns
+
+Example:
+```txt
+Taxa	TestPheno
+IRIS_313-8285	2.3
+IRIS_313-8349	3.1
+...
+```
+
