@@ -4,7 +4,7 @@ A lightweight command-line wrapper for performing Genome-Wide Association Studie
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone the Repository
 
@@ -39,4 +39,4 @@ docker run --rm \
 ```
 This runs the analysis using test data provided in the data/ folder and stores results in blink_results/.
 
-### Input Format
+## Input Format
