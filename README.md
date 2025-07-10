@@ -102,6 +102,20 @@ This will create a folder blink_results/ containing results and plots.
 
 ## Output
 
+Your output folder (e.g., blink_results/) will contain:
+- blink_gwas_results.csv
+- blink_full_results.rds
+- manhattan_plot.png
+- qq_plot.png
+
+## Example Plots
+These are generated automatically and saved in your output directory.
+
+<p align="center"> <img src="blink_results/qq_plot.png" alt="QQ Plot" width="400"/> <br> <em>QQ plot from BLINK results</em> </p> <p align="center"> <img src="blink_results/manhattan_plot.png" alt="Manhattan Plot" width="400"/> <br> <em>Manhattan plot from BLINK results</em> </p>
+
+## Test Data
+Sample VCF and phenotype files are provided in the data/ folder so you can test the pipeline immediately.
+
 
 
 
