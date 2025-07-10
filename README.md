@@ -15,4 +15,4 @@ cd BLINK-Wrapper
 
 ### 2. Build the Docker Image
 
-##Make sure you're inside the BLINK-Wrapper directory (where the Dockerfile is located).
+Make sure you're inside the BLINK-Wrapper directory (where the Dockerfile is located).
