@@ -54,3 +54,9 @@ IRIS_313-8349	3.1
 ...
 ```
 
+Genotype (.vcf or .vcf.gz)
+- A valid VCF file with genotypes in GT format (0/0, 0/1, 1/1)
+- Chromosome should be numeric
+
+
+
