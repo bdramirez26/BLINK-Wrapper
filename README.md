@@ -40,3 +40,8 @@ docker run --rm \
 This runs the analysis using test data provided in the data/ folder and stores results in blink_results/.
 
 ## Input Format
+Phenotype (.txt)
+A tab-delimited file with:
+
+- First column as Taxa (individual IDs)
+-  One or more trait columns
