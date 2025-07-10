@@ -114,7 +114,10 @@ These are generated automatically and saved in your output directory.
 <p align="center"> <img src="blink_results/qq_plot.png" alt="QQ Plot" width="400"/> <br> <em>QQ plot from BLINK results</em> </p> <p align="center"> <img src="blink_results/manhattan_plot.png" alt="Manhattan Plot" width="400"/> <br> <em>Manhattan plot from BLINK results</em> </p>
 
 ## Test Data
-Sample VCF and phenotype files are provided in the data/ folder so you can test the pipeline immediately.
+Sample VCF and phenotype files are provided in the data/ folder, allowing you to test the pipeline immediately.
+
+
+
 
 
 
