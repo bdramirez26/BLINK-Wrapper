@@ -1,18 +1,6 @@
-# BLINK-Wrapper
+# 🌾 BLINK Wrapper for GWAS
 
-This is a command-line wrapper for running Genome-Wide Association Studies (GWAS) using the **BLINK** method in R. The wrapper is fully containerized using Docker, making it portable and easy to use for any user with basic inputs: a phenotype file and a VCF genotype file.
-
----
-
-## 🧪 What It Does
-
-- Performs GWAS using the `Blink()` function from the BLINK R package
-- Accepts `.txt`, `.vcf`, or `.vcf.gz` formats
-- Automatically generates:
-  - CSV results (`blink_gwas_results.csv`)
-  - RDS file (`blink_full_results.rds`)
-  - Manhattan plot (`manhattan_plot.png`)
-  - QQ plot (`qq_plot.png`)
+A lightweight command-line wrapper for performing Genome-Wide Association Studies (GWAS) using the [`BLINK`](https://github.com/YaoZhou89/BLINK) R package. It runs BLINK on phenotype and genotype data, and automatically generates GWAS results along with Manhattan and QQ plots.
 
 ---
 
@@ -26,22 +14,5 @@ cd BLINK-Wrapper
 ```
 
 ### 2. Build the Docker Image
-```bash
-docker build -t blink-wrapper .
-```
 
-### 3. Run the Analysis
-```bash
-docker run --rm \
-  --platform linux/amd64 \
-  -v "$(pwd)":/app \
-  blink-wrapper \
-  data/test-pheno.txt \
-  data/test-150.vcf.gz \
-  blink_results
-```
-
-
-
-
-
+##Make sure you're inside the BLINK-Wrapper directory (where the Dockerfile is located).
