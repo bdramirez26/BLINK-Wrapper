@@ -24,5 +24,19 @@ This is a command-line wrapper for running Genome-Wide Association Studies (GWAS
 git clone https://github.com/bdramirez26/BLINK-Wrapper
 cd BLINK-Wrapper
 
+### 2. Build the Docker Image
+```bash
+docker build -t blink-wrapper .
+
+### 3. Run the Analysis
+```bash
+docker run --rm \
+  --platform linux/amd64 \
+  -v "$(pwd)":/app \
+  blink-wrapper \
+  data/test-pheno.txt \
+  data/test-150.vcf.gz \
+  blink_results
+
 
 
