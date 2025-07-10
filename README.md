@@ -26,3 +26,17 @@ Apple Silicon Users
 ```bash
 docker build --platform linux/amd64 -t blink-wrapper .
 ```
+
+### 3. Run the Analysis
+```bash
+docker run --rm \
+  --platform linux/amd64 \
+  -v "$(pwd)":/app \
+  blink-wrapper \
+  data/test-pheno.txt \
+  data/test-150.vcf.gz \
+  blink_results
+```
+This runs the analysis using test data provided in the data/ folder and stores results in blink_results/.
+
+### Input Format
