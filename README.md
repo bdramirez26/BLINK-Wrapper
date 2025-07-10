@@ -59,4 +59,13 @@ Genotype (.vcf or .vcf.gz)
 - Chromosome should be numeric
 
 
+## Output
+The following files will be saved to your output directory (e.g. blink_results/):
+- blink_gwas_results.csv: Full GWAS results table
+- blink_full_results.rds: RDS file for advanced reuse
+- manhattan_plot.png: Manhattan plot of -log10(p-values)
+- qq_plot.png: QQ plot of observed vs expected p-values
+
+Example Plots
+<p align="center"> <img src="results/qq_plot.png" width="400"/> <br><em>QQ plot generated from BLINK results</em> </p> <p align="center"> <img src="results/manhattan_plot.png" width="600"/> <br><em>Manhattan plot generated from BLINK results</em> </p>
 
