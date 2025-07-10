@@ -16,3 +16,13 @@ cd BLINK-Wrapper
 ### 2. Build the Docker Image
 
 Make sure you're inside the BLINK-Wrapper directory (where the Dockerfile is located).
+
+Intel/AMD Users
+```bash
+docker build -t blink-wrapper .
+```
+
+Apple Silicon Users
+```bash
+docker build --platform linux/amd64 -t blink-wrapper .
+```
